@@ -1,0 +1,163 @@
+/* https://coolors.co/f6d8ae-2e4057-083d77-da4167-f4d35e */
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+.showtitle{
+  font-size:2em;
+  color:#DA4167;
+}
+
+
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.9); 
+  display:none;
+  
+}
+
+#message {
+    width:80%;
+    padding:20px;
+    background-color:#F6D8AE;
+    text-align:center;
+    font-size:25px;
+    
+    /* Center the message in the lightbox */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#message > img {
+  width:600px;
+}
+
+body {
+  background-color: #F6D8AE;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-family:'Merriweather', serif;
+}
+
+#search{
+  border:0px;
+  width:300px;
+  height:50px;
+  font-size:35px;
+  margin:7px;
+  padding:10px;
+}
+
+#button{
+  border:0px;
+  width:150px;
+  height:50px;
+  font-size:35px;
+  margin:10px;
+}
+
+.show{
+  display:grid;
+  grid-template-areas: 
+  'a a'
+  'b f'
+  'c f'
+  'd f'
+  'e f';
+  grid-template-columns: 350px, 350px;
+  grid-template-rows: 200px, 200px, 200px, 200px, 200px;
+
+  margin:50px;
+  padding:25px;
+
+  border:10px, solid, black;
+}
+
+#a{
+  grid-area:a;
+  width:350px;
+}
+#b{
+  grid-area:b;
+  width:350px;
+}
+#c{
+  grid-area:c;
+  width:350px;
+}
+#d{
+  grid-area:d;
+  width:350px;
+}
+#e{
+  grid-area:e;
+  width:350px;
+}
+#f{
+  grid-area:f;
+  width:350px;
+}
+
+a{
+  text-decoration:none;
+  color:#083D77;
+  font-weight: 5px;
+}
+
+a.hover{
+  color:#DA4167;
+}
+
+@media(max-width:800px){
+  body{
+    font-size:15px;
+  }
+  .show{
+    display:grid;
+    grid-template-areas: 
+    'a'
+    'b'
+    'c'
+    'd'
+    'e'
+    'f';
+    grid-template-columns: 100px;
+    margin-left:0;
+    margin-bottom:20px;
+    padding:25px;
+  
+    border:10px, solid, black;
+
+    width:200px;
+  }
+  #message > img {
+    width:250px;
+  }
+
+  #search{
+    border:0px;
+    width:200px;
+    height:30px;
+    font-size:20px;
+    margin:7px;
+    padding:10px;
+  }
+  
+  #button{
+    border:0px;
+    width:100px;
+    height:30px;
+    font-size:20px;
+    margin:10px;
+  }
+
+  
+} 
